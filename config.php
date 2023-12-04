@@ -1,4 +1,4 @@
 <?php
 return [
-    'apiKey' => 'AIzaSyCCi2rUzeQrmLdOixyTwkQcqjcF7WTBhVA',
+    'apiKey' => 'introduceti cheia API personala aici',
 ];
