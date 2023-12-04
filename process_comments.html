@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicatia pentru Evaluarea Tendintei unui Video</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        .text-center{
+            padding: 10px;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+        }
+        .link-form{
+            
+            border-radius: 5px;
+            padding: 3px;
+            align-items: center;
+            box-shadow: 0 0 50px rgb(245, 244, 244);
+        }
+        .txtcontainer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 5vh;
+            margin: 20px;
+            
+        }
+        input[type="text"]{
+            text-align: center;
+            border-color: white;
+        }
+        .btn-primary{
+            background-color:transparent;
+            border-color: white;
+        }
+    </style>
+
+</head>
+<body>
+  <div class="container" >
+        <div class="col-md-4 link-form">
+            <form action="process_comments.php" method="post">
+              <h1 class="text-center mb-4" style="color: white;">Introduceți link-ul YouTube:</h1>
+                <div class="txtcontainer">
+                 <input type="text" id="youtubeUrl" name="youtubeUrl" placeholder="Link YouTube" size="40" required>
+                </div>
+              <h3 class="text-center mb-4" style="color: white;">Introduceți cuvinte de interes, separate cu virgula (fara spatii).</h3>
+                <div class="txtcontainer">
+                 <input type="text" id="cuvcheie" name="cuvcheie" placeholder="Cuvinte cheie" size="40" required>
+                </div>
+                <div class="txtcontainer">
+                 <button class="btn btn-primary" type="submit">Obține comentariile</button>
+                </div>
+            </form>
+        </div>
+  </div>
+</body>
+</html>
